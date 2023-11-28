@@ -1,15 +1,15 @@
 import '../styles/globals.css'
 
-import { ChatAppProvider } from '../context/ChapAppContext';
+import { EthertalkProvider } from '../context/EthertalkContext';
 import { NavBar } from "../components/index"
 
 const MyApp = ({ Component, pageProps }) => (
   <div>
-    <ChatAppProvider>
-      <NavBar />
-      <Component {...pageProps} />
-    </ChatAppProvider>
+      <EthertalkProvider>
+        <NavBar />
+        <Component {...pageProps}/>
+      </EthertalkProvider>
   </div>
 );
 
-export default MyApp
+export default MyApp;

@@ -3,17 +3,17 @@ const hre = require("hardhat");
 async function main() {
 
 
-  const ChatApp = await hre.ethers.getContractFactory("ChatApp");
-  const chatApp = await ChatApp.deploy();
+  const EtherTalk = await hre.ethers.getContractFactory("EtherTalk");
+  const etherTalk = await EtherTalk.deploy();
 
-  await chatApp.deployed();
+  await etherTalk.deployed();
 
-  console.log(`contract Address ${chatApp.address}`)
+  console.log(`contract Address:  ${etherTalk.address}`)
 
  
 }
  
 main().catch((error) => {
-  console.error(error);
+  console.error(error); 
   process.exitCode = 1;
 });

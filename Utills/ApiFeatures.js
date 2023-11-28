@@ -1,27 +1,26 @@
 import { ethers } from "ethers";;
 import Web3Modal from 'web3modal';
 
-import {ChatAppAddress, ChatAppABI}  from "../context/constant";
-
+import {EtherTalkAddress, EtherTalkABI} from "../context/constant"
 
 export const checkIfWalletConnected = async () => {
     try{
-        if(!window.ethereum) return console.log("Install MetaMask");
+        if(!window.ethereum) return  console.log("Install MetaMask");
 
         const accounts = await window.ethereum.request({
-            method: "eth.accounts",
+            method: "eth_accounts",
         });
 
         const firstAccount = accounts[0];
-        return firstAccount;
-    } catch (error) {
+    }catch (error) {
         console.log(error);
     }
 };
 
-export const connectWallet = async () => {
+
+export const connectWallet = async () =>  {
     try{
-        if(!window.ethereum) return console.log("Install MetaMask");
+        if(!window.ethereum) return  console.log("Install MetaMask");
 
         const accounts = await window.ethereum.request({
             method: "eth_requestAccounts",
@@ -29,46 +28,44 @@ export const connectWallet = async () => {
 
         const firstAccount = accounts[0];
         return firstAccount;
-    } catch (error) {
+    }catch (error) {
         console.log(error);
     }
 }
 
-const fetchContract = (signerOrProvider) => new ethers.Contract(ChatAppABI, ChatAppAddress, signerOrProvider);
+
+const fetchContract = (signerOrOrProvider) => 
+    new ethers.Contract( EtherTalkAddress, EtherTalkABI, signerOrOrProvider);
 
 
-export const connectingWithContract = async () =>  {
-    try{
+export const connectingWithContract = async () => {
+    try {
         const web3modal = new Web3Modal();
         const connection = await web3modal.connect();
         const provider = new ethers.providers.Web3Provider(connection);
-        const signer = provider.getSigner();
+        const signer =provider.getSigner();
         const contract = fetchContract(signer);
 
         return contract;
-    } catch (error){
-        console.log(error)
+    }catch(error) {
+        console.log(error);
     }
-}
+};
 
-
-export const  converTime = (time) => {
+export const converTime = (time) => {
     const newTime = new Date(time.toNumber());
 
-    const realTime = 
-    newTime.getHours() + 
-    "/" + 
-    newTime.getMinutes() +
-    "/" + 
-    newTime.getSeconds() + 
-    " Date:" +
-    newTime.getDate() + 
-    "/" + 
-    (newTime.getMonth() + 1) + 
-    "/" + 
+    const realTime = newTime.getHours() + 
+    "/" +
+    newTime.getMinutes() + 
+    "/" +
+    newTime.getSeconds() +
+    " Date" +
+    newTime.getDate() +
+    "/" +
+    (newTime.getMonth() + 1) +
+    "/" +
     newTime.getFullYear();
 
-
     return realTime;
-
 }

@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 
-import { ChatAppContect } from '../context/ChapAppContext'
+import { EtherTalkContext } from '../context/EthertalkContext'
 
-const ChatApp = () => {
-  const {title} = useContext(ChatAppContect);
-  return 
-    <div>{title}</div>
-  
+const EtherTalk = () => {
+const {} = useContext(EtherTalkContext);
+  return (
+    <div></div>
+  )
 }
 
-export default ChatApp
+export default EtherTalk

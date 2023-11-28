@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\Admin\\Desktop\\solidity\\chatapp\\contracts\\ChatApp.sol": {
-      "lastModificationDate": 1682509401281,
-      "contentHash": "2bcc5402f8cd93f459aca5aac8225df2",
-      "sourceName": "contracts/ChatApp.sol",
+    "C:\\Users\\Admin\\Desktop\\solidity\\chatapp\\contracts\\EtherTalk.sol": {
+      "lastModificationDate": 1701089185092,
+      "contentHash": "7643ded1e2a098293b46a89894b4e809",
+      "sourceName": "contracts/EtherTalk.sol",
       "solcConfig": {
         "version": "0.8.18",
         "settings": {
@@ -30,10 +30,10 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">= 0.7.0 < 0.9.0"
+        ">=0.7.0 <0.9.0"
       ],
       "artifacts": [
-        "ChatApp"
+        "EtherTalk"
       ]
     }
   }
