@@ -1,11 +1,15 @@
 import React, { useContext } from 'react'
 
-import { EtherTalkContext } from '../context/EthertalkContext'
+// import { EtherTalkContext } from '../context/EthertalkContext'
+import { Filter, Friend } from '../components/index';
 
 const EtherTalk = () => {
-const {} = useContext(EtherTalkContext);
+// const {} = useContext(EtherTalkContext);
   return (
-    <div></div>
+    <div>
+      <Filter />
+      <Friend />
+    </div>
   )
 }
 

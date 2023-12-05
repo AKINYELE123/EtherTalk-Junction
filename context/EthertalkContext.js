@@ -7,7 +7,7 @@ export const EtherTalkContext = React.createContext();
 export const EthertalkProvider = ({ children }) => {
 
     const [account, setAccount] = useState("");
-    const [userName, setuserName] = useState("");
+    const [userName, setUserName] = useState("");
     const [friendList, setFriendList] = useState([]);
     const [friendMsg, setFriendMsg] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -33,8 +33,8 @@ export const EthertalkProvider = ({ children }) => {
             const connectAccount = await connectWallet();
             setAccount(connectAccount);
             // // GET USERNAME
-            const fetchedUserName = await contract.getUsername(connectAccount);
-            setuserName(fetchedUserName);
+            const userName = await contract.getUsername(connectAccount);
+            setUserName(userName);
             // GET MY FRIEND LIST
             const friendList = await contract.getMyFriendList();
             setFriendList(friendList);
@@ -42,7 +42,7 @@ export const EthertalkProvider = ({ children }) => {
             const userList = await contract.getAllAppUser();
             setUserLists(userList);
         } catch (error) {
-            setError("Please Install and Connect your wallet")
+            // setError("Please Install and Connect your wallet")
         }
     };;
 
@@ -85,7 +85,7 @@ export const EthertalkProvider = ({ children }) => {
 
     const addFriends = async ({ name, accountAddress }) => {
         try {
-            if (name || accountAddress) return setError("Please provide");
+            // if (name || accountAddress) return setError("Please provide");
 
             const contract = await connectingWithContract();
             const addMyFriend = await contract.addFriend(accountAddress, name);

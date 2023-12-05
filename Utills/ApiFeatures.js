@@ -12,6 +12,7 @@ export const checkIfWalletConnected = async () => {
         });
 
         const firstAccount = accounts[0];
+        return firstAccount;
     }catch (error) {
         console.log(error);
     }
@@ -34,8 +35,9 @@ export const connectWallet = async () =>  {
 }
 
 
-const fetchContract = (signerOrOrProvider) => 
-    new ethers.Contract( EtherTalkAddress, EtherTalkABI, signerOrOrProvider);
+const fetchContract = (signerOrOrProvider) =>  {
+    return new ethers.Contract( EtherTalkAddress, EtherTalkABI, signerOrOrProvider);
+};
 
 
 export const connectingWithContract = async () => {
@@ -52,7 +54,7 @@ export const connectingWithContract = async () => {
     }
 };
 
-export const converTime = (time) => {
+export const convertTime = (time) => {
     const newTime = new Date(time.toNumber());
 
     const realTime = newTime.getHours() + 
