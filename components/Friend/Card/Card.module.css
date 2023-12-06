@@ -1,6 +1,4 @@
-.Card{
 
-}
 
 .Card_box{
     display: flex !important;
@@ -16,9 +14,6 @@
     border-radius: 50% !important;
 }
 
-.Card_box_left_img{
-
-}
 
 .Card_box_right{
     display: grid !important;
@@ -27,8 +22,4 @@
 
 .Card_box_right_middle{
     margin-top: -1.2rem !important;
-}
-
-.Card_box_right_end{
-
 }
