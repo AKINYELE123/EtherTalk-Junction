@@ -95,7 +95,7 @@ export const EthertalkProvider = ({ children }) => {
             router.push('/');
             window.location.reload();
         } catch (error) {
-            setError("Something went Wrrong while adding Friends, try again")
+            console.log("Something went Wrrong while adding Friends, try again")
         }
     };
 
@@ -104,7 +104,7 @@ export const EthertalkProvider = ({ children }) => {
     const sendMessage = async ({ msg, address }) => {
         try {
 
-            if (msg || address) return setError("Please type your message");
+            // if (msg || address) return setError("Please type your message");
             const contract = await connectingWithContract();
             const addMessage = await contract.sendMessage(address, msg);
             setLoading(true);

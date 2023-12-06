@@ -54,20 +54,44 @@ export const connectingWithContract = async () => {
     }
 };
 
-export const convertTime = (time) => {
-    const newTime = new Date(time.toNumber());
+// export const convertTime = (time) => {
+//     const newTime = new Date(time.toNumber());
 
-    const realTime = newTime.getHours() + 
-    "/" +
-    newTime.getMinutes() + 
-    "/" +
-    newTime.getSeconds() +
-    " Date" +
-    newTime.getDate() +
-    "/" +
-    (newTime.getMonth() + 1) +
-    "/" +
-    newTime.getFullYear();
+//     const realTime = newTime.getHours() + 
+//     "/" +
+//     newTime.getMinutes() + 
+//     "/" +
+//     newTime.getSeconds() +
+//     " Date" +
+//     newTime.getDate() +
+//     "/" +
+//     (newTime.getMonth() + 1) +
+//     "/" +
+//     newTime.getFullYear();
 
+//     return realTime;
+// }
+
+export const convertTime = (timestamp) => {
+    // Convert the provided timestamp to milliseconds (if it's in seconds)
+    const milliseconds = timestamp.toNumber() * 1000; // Assuming the timestamp is in seconds
+  
+    // Create a new Date object using the timestamp in milliseconds
+    const newTime = new Date(milliseconds);
+  
+    // Use Date methods to extract individual date and time components
+    const hours = newTime.getHours().toString().padStart(2, '0'); // Ensure two digits for hours
+    const minutes = newTime.getMinutes().toString().padStart(2, '0'); // Ensure two digits for minutes
+    const seconds = newTime.getSeconds().toString().padStart(2, '0'); // Ensure two digits for seconds
+    const day = newTime.getDate().toString().padStart(2, '0'); // Ensure two digits for day
+    const month = (newTime.getMonth() + 1).toString().padStart(2, '0'); // Ensure two digits for month
+    const year = newTime.getFullYear();
+  
+    // Construct the formatted date and time string
+    const formattedTime = `${hours}:${minutes}:${seconds} Date: ${day}/${month}/${year}`;
+
+    const realTime = formattedTime; 
+  
     return realTime;
-}
+  };
+  

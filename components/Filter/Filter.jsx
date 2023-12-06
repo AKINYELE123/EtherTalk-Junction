@@ -39,7 +39,7 @@ const Filter = () => {
           openBox={setAddFriend}
           title="WELCOME TO"
           head="ETJ"s
-           info="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis numquam quibusdam in dicta, consectetur cumque fugiat qui vel doloremque pariatur."
+           info="Your decentralized chat solution powered by Web3 technology. Enjoy secure, private, and trustless conversations on the Ethereum blockchain."
            smallInfo="Kindly Select your friend name and address" 
            functionName={addFriends}
            image={images.hero}

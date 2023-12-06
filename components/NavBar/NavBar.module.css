@@ -55,6 +55,11 @@
     display: none;
 }
 
+.NavBar_box_left{
+    width: 50;
+    height: 50;
+}
+
 
 .NavBar_box_right_open{
     display: none;

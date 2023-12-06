@@ -12,7 +12,7 @@ const Friend = () => {
   const {
     sendMessage,
     account,
-    friendLists,
+    friendList,
     friendMsg,
     readUser,
     readMessage,
@@ -22,11 +22,12 @@ const Friend = () => {
     currentUserName,
     currentUserAddress,
   } = useContext(EtherTalkContext);
+  console.log("friendList", friendList);
   return (
     <div className={Style.Friend}>
       <div className={Style.Friend_box}>
         <div className={Style.Friend_box_left}>
-          {friendLists && friendLists.map((el, i) => (
+          {friendList && friendList.map((el, i) => (
             <Card
               key={i + 1}
               el={el}

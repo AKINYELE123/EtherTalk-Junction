@@ -35,10 +35,10 @@ const Chat = ({
 
     useEffect(() => {
         if (chatData.address) {
-            readMessage(router.query.address);
-            readUser(router.query.address);
+            readMessage(chatData.address);
+            readUser(chatData.address);
         }
-    })
+    }, []);
 
     console.log(
         "Chat name = " + chatData.name + " Chat Address = " + chatData.address + " msg = " + message
@@ -118,18 +118,18 @@ const Chat = ({
                 {currentUserAddress && currentUserName ? (
                     <div className={Style.Chat_box_send}>
                         <div className={Style.Chat_box_send_img}>
-                            <Image
+                            {/* <Image
                                 src={images.smile}
                                 alt="smile img"
                                 width={50}
                                 height={50}
-                            />
+                            /> */}
                             <input
                                 type="text"
                                 placeholder="type you message"
                                 onChange={(e) => setMessage(e.target.value)}
                             />
-                            <Image src={images.file} alt="file" width={50} height={50} />
+                            {/* <Image src={images.file} alt="file" width={50} height={50} />*/}
                             {loading == true ? (
                                 <Loader />
                             ) : (
