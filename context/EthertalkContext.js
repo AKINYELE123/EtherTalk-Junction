@@ -66,7 +66,7 @@ export const EthertalkProvider = ({ children }) => {
     // CREATE ACCOUNT
 
     const createAccount = async ({ name, accountAddress }) => {
-        try {
+        try { 
            if (!name) return setError("Name cannot be empty");
             const contract = await connectingWithContract();
             const getCreatedUser = await contract.createAccount(name);
