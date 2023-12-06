@@ -51,15 +51,8 @@ const Chat = ({
         <div className={Style.Chat}>
             {currentUserAddress && currentUserName ? (
                 <div className={Style.Chat_use_info}>
-                    {/* <Image
-                        src={images.accountName}
-                        alt="user Image"
-                        width={70}
-                        height={70}
-                    /> */}
                     <div className={Style.Chat_use_info_box}>
                         <h4>{currentUserName}</h4>
-                        {/* <h4>{chatData.name}</h4> */}
                         <p className={Style.show}> {currentUserAddress} </p>
                     </div>
                 </div>
@@ -75,12 +68,7 @@ const Chat = ({
                                 {" "}
                                 {el.sender == chatData.address ? (
                                     <div className={Style.Chat_box_left_title}>
-                                        {/* <Image
-                                            src={images.accountName}
-                                            alt="image"
-                                            width={50}
-                                            height={50}
-                                        /> */}
+                                        
                                         <span>
                                             {" "}
                                             {chatData.name}
@@ -90,12 +78,6 @@ const Chat = ({
                                     </div>
                                 ) : (
                                     <div className={Style.Chat_box_left_title}>
-                                        {/* <Image
-                                            src={images.accountName}
-                                            alt="image"
-                                            width={50}
-                                            height={50}
-                                        /> */}
                                         <span>
                                             {" "}
                                             {userName}
@@ -118,18 +100,11 @@ const Chat = ({
                 {currentUserAddress && currentUserName ? (
                     <div className={Style.Chat_box_send}>
                         <div className={Style.Chat_box_send_img}>
-                            {/* <Image
-                                src={images.smile}
-                                alt="smile img"
-                                width={50}
-                                height={50}
-                            /> */}
                             <input
                                 type="text"
                                 placeholder="type you message"
                                 onChange={(e) => setMessage(e.target.value)}
                             />
-                            {/* <Image src={images.file} alt="file" width={50} height={50} />*/}
                             {loading == true ? (
                                 <Loader />
                             ) : (
