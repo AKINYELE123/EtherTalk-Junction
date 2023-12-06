@@ -62,7 +62,7 @@ const NavBar = () => {
           {/* Mobile */}
 
           {open && (
-             <div className={Style.mobile_menu}> 
+             <div className={Style.mobile_menu} style={{ display: openModel && open ? 'none' : 'block' }}> 
              {menuItems.map((el, i) => (
                <div onClick={() => setActive(i + 1)} key={i + 1} className={`${Style.mobile_menu_item} ${active == i + 1 ? Style.active_btn : "" }`}>
                  <Link className={Style.mobile_menu_item_link} 
