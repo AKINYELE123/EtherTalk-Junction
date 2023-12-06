@@ -50,7 +50,7 @@
 }
 
 .Filter_model{
-    position: fixed !important;
+    position: relative !important;
     inset: 0 0 0 0 !important;
     background-color: #292f3f !important;
     z-index: 2222222222 !important;
