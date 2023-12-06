@@ -51,12 +51,12 @@ const Chat = ({
         <div className={Style.Chat}>
             {currentUserAddress && currentUserName ? (
                 <div className={Style.Chat_use_info}>
-                    <Image
+                    {/* <Image
                         src={images.accountName}
                         alt="user Image"
                         width={70}
                         height={70}
-                    />
+                    /> */}
                     <div className={Style.Chat_use_info_box}>
                         <h4>{currentUserName}</h4>
                         {/* <h4>{chatData.name}</h4> */}
@@ -75,12 +75,12 @@ const Chat = ({
                                 {" "}
                                 {el.sender == chatData.address ? (
                                     <div className={Style.Chat_box_left_title}>
-                                        <Image
+                                        {/* <Image
                                             src={images.accountName}
                                             alt="image"
                                             width={50}
                                             height={50}
-                                        />
+                                        /> */}
                                         <span>
                                             {" "}
                                             {chatData.name}
@@ -90,12 +90,12 @@ const Chat = ({
                                     </div>
                                 ) : (
                                     <div className={Style.Chat_box_left_title}>
-                                        <Image
+                                        {/* <Image
                                             src={images.accountName}
                                             alt="image"
                                             width={50}
                                             height={50}
-                                        />
+                                        /> */}
                                         <span>
                                             {" "}
                                             {userName}
