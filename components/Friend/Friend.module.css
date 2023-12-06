@@ -1,23 +1,23 @@
 .Friend {
-    width: 80%;
-    margin: 1rem auto;
+    width: 80% !important;
+    margin: 1rem auto !important;
 }
 
 .Friend_box {
-    display: grid;
-    grid-template-columns: 1.4fr 3fr;
-    gap: 2rem;
+    display: grid !important;
+    grid-template-columns: 1.4fr 3fr !important;
+    gap: 2rem !important;
 }
 
 .Friend_box_left {
-    background-color: rgb(0, 0, 0, 0.25);
-    padding: 1rem;
-    border-radius: .5rem;
+    background-color: rgb(0, 0, 0, 0.25) !important;
+    padding: 1rem !important;
+    border-radius: .5rem !important;
 }
 
 /* .Friend_box_right {} */
 
 @media screen  and (max-width:50em){
-    .Friend{width: 90%;}
-    .Friend_box{grid-template-columns:1fr;}
+    .Friend{width: 90% !important;}
+    .Friend_box{grid-template-columns:1fr !important;}
 }

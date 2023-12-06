@@ -1,27 +1,27 @@
 .alluser_info{
-    width: 80%;
-    margin: 4rem auto;
-    font-size: 1.5rem;
+    width: 80% !important;
+    margin: 4rem auto !important;
+    font-size: 1.5rem !important;
 }
 
 .alluser {
-    width: 80%;
-    margin: 2rem auto;
+    width: 80% !important;
+    margin: 2rem auto !important;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 3rem !important;
 }
 
 @media only screen and (max-width: 35em) {
     .alluser_info{
-        width: 90%;
-        font-size: 1rem;
-        margin: 2rem auto;
+        width: 90% !important;
+        font-size: 1rem !important;
+        margin: 2rem auto !important;
     }
 
     .alluser{
-        width: 90%;
-        grid-template-columns: 1fr;
+        width: 90% !important;
+        grid-template-columns: 1fr !important;
     }
 }

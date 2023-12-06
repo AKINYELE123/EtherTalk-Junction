@@ -1,35 +1,35 @@
 .UserCard{
-    background-color: rgba(0,0,0, 0.25);
-    border-radius: .5rem;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
+    background-color: rgba(0,0,0, 0.25) !important;
+    border-radius: .5rem !important;
+    text-align: center !important;
+    padding: 1rem !important;
+    position: relative !important;
 }
 
 .UserCard_box_img{
-    border-radius: 50%;
+    border-radius: 50% !important;
 }
 
 .UserCard_box_info{
-    line-height: .6;
+    line-height: .6 !important;
 }
 
 .UserCard_box_info button{
-    background-color: rgba(0,0,0, 0.25);
-    color: #F18303;
-    width: 50%;
-    padding: 1rem;
-    border: none;
-    border-radius: .5rem;
-    font-size: 1rem;
-    cursor: pointer;
+    background-color: rgba(0,0,0, 0.25) !important;
+    color: #F18303 !important;
+    width: 50% !important;
+    padding: 1rem !important;
+    border: none !important;
+    border-radius: .5rem !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
 }
 
 .number{
-    position: absolute;
-    right: 1rem;
-    padding: 1rem 1.3rem;
-    border-radius: 50%;
-    background-color: #F18303;
-    top: 1rem;
+    position: absolute !important;
+    right: 1rem !important;
+    padding: 1rem 1.3rem !important;
+    border-radius: 50% !important;
+    background-color: #F18303 !important;
+    top: 1rem !important;
 }

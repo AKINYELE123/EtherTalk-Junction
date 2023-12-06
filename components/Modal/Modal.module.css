@@ -1,71 +1,71 @@
 .Modal{
-    width: 85%;
-    margin: 1rem auto;
+    width: 85% !important;
+    margin: 1rem auto !important;
 }
 
 .Modal_box{
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    align-items: center;
+    display: grid !important;
+    grid-template-columns: 1.4fr 1fr !important;
+    align-items: center !important;
 }
 
 .Modal_box_right h1{
-    font-size: 3rem;
-    color: #f18303;
-    line-height: .9;
+    font-size: 3rem !important;
+    color: #f18303 !important;
+    line-height: .9 !important;
 }
 
 .Modal_box_right h1 span{
-    display: block;
-    font-size: 5rem;
+    display: block !important;
+    font-size: 5rem !important;
 }
 
 .Modal_box_right small {
-    font-size: 1.2rem;
-    color: #f18303;
+    font-size: 1.2rem !important;
+    color: #f18303 !important;
 }
 
 .Modal_box_right_name_info{
-    display: flex;
-    align-items: center;
-    margin-block: 1rem ;
-    gap: 1rem;
-    background-color: rgba(0,0,0,0.25);
-    padding: 1rem;
-    border-radius: .5rem;
-    cursor: pointer;
+    display: flex !important;
+    align-items: center !important;
+    margin-block: 1rem !important ;
+    gap: 1rem !important;
+    background-color: rgba(0,0,0,0.25) !important;
+    padding: 1rem !important;
+    border-radius: .5rem !important;
+    cursor: pointer !important;
 }
 
 .Modal_box_right_name_info input{
-    width: 100%;
-    background-color: transparent;
-     outline: none;
-     border: none;
-     color: #f18303;
+    width: 100% !important;
+    background-color: transparent !important;
+     outline: none !important;
+     border: none !important;
+     color: #f18303 !important;
 }
 
 .Modal_box_right_name_btn {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     gap: 1rem;
+     display: grid !important;
+     grid-template-columns: repeat(2, 1fr) !important;
+     gap: 1rem !important;
 }
 
 .Modal_box_right_name_btn button {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: #f18303;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: rgba(0,0,0,0.25);
-    padding: 1rem;
-    border-radius: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    cursor: pointer;
+    background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+    color: #f18303 !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    background-color: rgba(0,0,0,0.25) !important;
+    padding: 1rem !important;
+    border-radius: .5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+    cursor: pointer !important;
 }
 
 
