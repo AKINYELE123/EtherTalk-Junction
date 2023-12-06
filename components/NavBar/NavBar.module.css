@@ -1,139 +1,139 @@
 .NavBar {
-    width: 80%;
-    margin: 3rem auto;
-    position: relative;
+    width: 80% !important;
+    margin: 3rem auto !important;
+    position: relative !important;
 }
 
 .NavBar_box {
-    display: grid;
-    grid-template-columns: 1fr 1.7fr;
-    align-items: center;
-    gap: 2rem;
+    display: grid !important;
+    grid-template-columns: 1fr 1.7fr !important;
+    align-items: center !important;
+    gap: 2rem !important;
 }
 
 .NavBar_box_right {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 
 .NavBar_box_right_menu {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    border-bottom: 2px solid transparent;
-    transition: all .3s ease-in-out;
+    display: flex !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    border-bottom: 2px solid transparent !important;
+    transition: all .3s ease-in-out !important;
 }
 
 .active_btn {
-    color: #f18303;
-    border-bottom: 2px solid #f18303;
-    padding-bottom: .4rem;
+    color: #f18303 !important;
+    border-bottom: 2px solid #f18303 !important;
+    padding-bottom: .4rem !important;
 }
 
 .NavBar_box_right_connect {
-    display: flex;
-    justify-self: flex-end;
+    display: flex !important;
+    justify-self: flex-end !important;
 }
 
 .NavBar_box_right_connect button {
-    background-color: rgba(0, 0, 0, 0.25);
-    padding: 1rem;
-    border: none;
-    border-radius: .5rem;
-    font-size: 1.1rem;
-    color: #f18303;
-    font-weight: 700;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    padding: 1rem !important;
+    border: none !important;
+    border-radius: .5rem !important;
+    font-size: 1.1rem !important;
+    color: #f18303 !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
 
-    display: flex;
-    align-items: center;
-    gap: .5rem
+    display: flex !important;
+    align-items: center !important;
+    gap: .5rem !important
 }
 
 .NavBar_box_right_close{
-    display: none;
+    display: none !important;
 }
 
 .NavBar_box_left{
-    width: 50;
-    height: 50;
+    width: 50 !important;
+    height: 50 !important;
 }
 
 
 .NavBar_box_right_open{
-    display: none;
+    display: none !important;
 }
 
 .NavBar_box_mobile{
-    display: none;
+    display: none !important;
 }
 
 .mobile_menu{
-    display: none;
+    display: none !important;
 }
 
 .modelBox{
-    position: fixed;
-    inset: 0 0 0 0;
-    background-color: #292f3f;
-    z-index: 7777777;
+    position: fixed !important;
+    inset: 0 0 0 0 !important;
+    background-color: #292f3f !important;
+    z-index: 7777777 !important;
 }
 
 
 @media only screen and (max-width: 35rem) {
     .NavBar{
-        width: 90%;
-        margin: 2rem auto;
+        width: 90% !important;
+        margin: 2rem auto !important;
     }
 
     .NavBar_box{
-        grid-template-columns: 6fr 2fr;
-        justify-content: space-between;
+        grid-template-columns: 6fr 2fr !important;
+        justify-content: space-between !important;
     }
 
     .NavBar_box_right_connect button {
-        font-size: 1rem;
-        padding: .8rem;
+        font-size: 1rem !important;
+        padding: .8rem !important;
     }
 
     .NavBar_box_right_open{
-        display: block;
+        display: block !important;
     }
 
     .NavBar_box_right_menu{
-     position: fixed;
-     z-index: 111111;
-     background-color: #292f3f;
-     width: 100%;
-     flex-direction: column;
-     height: 100vh;
-     inset: 0 0 0 0;
-     padding: 4rem;
-     display: none;
+     position: fixed !important;
+     z-index: 111111 !important;
+     background-color: #292f3f !important;
+     width: 100% !important;
+     flex-direction: column !important;
+     height: 100vh !important;
+     inset: 0 0 0 0 !important;
+     padding: 4rem !important;
+     display: none !important;
     }
 
     .mobile_menu{
-        display: block;
-        position: fixed;
-        z-index: 111111;
-        background-color: #292f3f;
-        inset: 0 0 0 0;
-        text-align: center;
-        padding-top: 4rem;
+        display: block !important;
+        position: fixed !important;
+        z-index: 111111 !important;
+        background-color: #292f3f !important;
+        inset: 0 0 0 0 !important;
+        text-align: center !important;
+        padding-top: 4rem !important;
     }
 
     .mobile_menu_items{
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
 
     .mobile_menu_btn{
-        padding-top: 2rem;
+        padding-top: 2rem !important;
     }
 
     .modelBox{
-        position: absolute;
-        inset: 0 0 -70% 0%;
+        position: absolute !important;
+        inset: 0 0 -70% 0% !important;
         
     }
  
