@@ -121,10 +121,14 @@ export const EthertalkProvider = ({ children }) => {
     // Read INFO
 
     const readUser = async (userAddress) => {
+        try {
         const contract = await connectingWithContract();
         const userName = await contract.getUsername(userAddress);
         setCurrentUserName(userName);
         setCurrentUserAddress(userAddress);
+    } catch (err) {
+        console.log(err);
+      }
     }
 
     return (
