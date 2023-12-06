@@ -46,6 +46,7 @@ const Friend = () => {
             loading={loading}
             currentUserName={currentUserName}
             currentUserAddress={currentUserAddress}
+            readUser={readUser}
           />
         </div>
       </div>
