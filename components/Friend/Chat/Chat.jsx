@@ -35,10 +35,10 @@ const Chat = ({
 
     useEffect(() => {
         if (chatData.address) {
-            readMessage(chatData.address);
-            readUser(chatData.address);
+          readMessage(chatData.address);
+          readUser(chatData.address);
         }
-    }, []);
+      }, []);
 
     console.log(
         "Chat name = " + chatData.name + " Chat Address = " + chatData.address + " msg = " + message
